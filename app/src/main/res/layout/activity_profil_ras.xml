@@ -30,13 +30,12 @@
         />
 
     <TextView
-        android:id="@+id/txJenis"
+        android:id="@+id/txRas"
+        android:layout_marginTop="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jenis Hewan"
-        android:textColor="@color/design_default_color_primary_dark"
-        android:textSize="17sp"
-        />
+        android:gravity="center"
+        android:text="Deskripsi hewan" />
     <TextView
         android:id="@+id/txAsal"
         android:layout_width="wrap_content"

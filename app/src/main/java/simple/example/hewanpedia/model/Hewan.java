@@ -23,21 +23,13 @@ public class Hewan {
         this.jenis = jenis;
     }
 
-    public String getRas() {
-        return ras;
-    }
+    public String getRas() { return ras; }
 
-    public void setRas(String ras) {
-        this.ras = ras;
-    }
+    public void setRas(String ras) { this.ras = ras; }
 
-    public String getAsal() {
-        return asal;
-    }
+    public String getAsal() { return asal; }
 
-    public void setAsal(String asal) {
-        this.asal = asal;
-    }
+    public void setAsal(String asal) { this.asal = asal; }
 
     public String getDeskripsi() {
         return deskripsi;

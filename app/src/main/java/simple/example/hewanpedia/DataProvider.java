@@ -8,6 +8,7 @@ import java.util.List;
 import simple.example.hewanpedia.model.Anjing;
 import simple.example.hewanpedia.model.Hewan;
 import simple.example.hewanpedia.model.Kucing;
+import simple.example.hewanpedia.model.Kelinci;
 
 public class DataProvider {
     private static List<Hewan> hewans = new ArrayList<>();
@@ -45,10 +46,28 @@ public class DataProvider {
                 "Anjing dari daerah Shiba ini gesit dan lincah sehingga awalnya banyak digunakan untuk berburu ", R.drawable.dog_shiba));
         return anjings;
     }
+    private static List<Kelinci> initDataKelinci(Context ctx) {
+        List<Kelinci> kelincis = new ArrayList<>();
+        kelincis.add(new Kelinci("Jersey wooly", "Netherland/prancis",
+                "Kepribadiannya sangat ramah dan tergolong hewan peliharaan yang kalem", R.drawable.jersey_wooly));
+        kelincis.add(new Kelinci("dwarf", "Belanda",
+                "kelinci Dwarf merupakan kelinci yang memiliki tubuh kerdil. Bentuk kepalanya yang bulat, telinga kecil, dan lehernya yang pendek menjadi ciri-ciri utama dari jenis kelinci Dwarf.", R.drawable.kelinci_dwarf));
+        kelincis.add(new Kelinci("Holland hop", "Belanda",
+                "Kelinci ini adalah kelinci pertunjukkan yang populer. Trahnya berasal dari Belanda dan telah diakui secara resmi oleh American Rabbit Breeders Association pada tahun 1979. Mereka tergolong ke kelinci berukuran mini dengan berat kurang lebih 1 kg", R.drawable.kelinci_holland_hop));
+        kelincis.add(new Kelinci("Mini lop", "Jerman",
+                "Mini Lop juga sangat ramah terhadap kelinci atau hewan lainnya, tapi mereka cenderung lebih menyukai anak-anak yang tidak terlalu aktif", R.drawable.kelinci_mini_lop));
+        kelincis.add(new Kelinci("polish", "Belanda",
+                "Jenis kelinci Polish mampu bertahan hidup hingga 7 tahun, bahkan lebih. Kelinci ini memiliki ciri-ciri telinganya yang pendek bulat runcing, matanya yang tajam berwarna merah, dan bulunya halus.", R.drawable.kelinci_polish));
+        kelincis.add(new Kelinci("Tan", "Braillsford",
+                "Jenis kelinci tan memiliki warna yang sangat bagus, yaitu perpaduan antara warna hitam dan coklat. Dan dari segi harga, jenis kelinci ini tidak terlalu mahal", R.drawable.kelinci_tan));
+        return kelincis;
+    }
 
-    private static void initAllHewans(Context ctx) {
+        private static void initAllHewans(Context ctx) {
         hewans.addAll(initDataKucing(ctx));
         hewans.addAll(initDataAnjing(ctx));
+        hewans.addAll(initDataKelinci(ctx));
+
     }
 
     public static List<Hewan> getAllHewan(Context ctx) {
